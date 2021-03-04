@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  font-family:'Volkhov', serif;
+  
+}
+
+a{
+  text-decoration:none;
+}
+
+li{
+  list-style:none;
+}
+
+img{
+  max-width:100px;
+}
+
+/*GRID GERAL*/
+
+.estrutura{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "sidenav content anuncios"
+    "footer footer footer"
+  ;
+}
+
+.header{
+  grid-area:header;
+}
+
+.sidenav{
+  grid-area:sidenav;
+}
+
+.content{
+  grid-area:content;
+}
+
+.anuncios{
+  grid-area:anuncios;
+}
+
+.footer{
+  grid-area:footer;
+}
+
